@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Star+Wars&display=swap');
+        .star-wars-font {
+            font-family: 'Star Wars', sans-serif;
+        }
+        .mirror-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        body {
+    font-family: Arial, sans-serif;
+    background: url('img/fundo_de_tela.jfif'); /* Degradê com imagem de fundo */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-attachment: fixed; /* Faz com que a imagem fique fixa ao rolar a página */
+    color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+
+    </style>
+</head>
+<body class="bg-gray-900 text-white flex items-center justify-center h-screen">
+
+    <div class="flex w-full h-full">
+
+        <div class="mirror-effect p-8 rounded-lg shadow-lg w-1/2 h-full flex flex-col items-center justify-center">
+            <h1 class="text-2xl font-bold mb-6">Faça o login</h1>
+            <p class="mb-4">Acesse com seu nome e a senha</p>
+            <div class="mb-4 w-full">
+                <input type="text" placeholder="Nome de usuário" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 bg-gray-800 text-white">
+            </div>
+            <div class="mb-6 w-full">
+                <input type="password" id="password" placeholder="Senha" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 bg-gray-800 text-white">
+            </div>
+            <button id="loginButton" class="w-full bg-blue-500 text-white p-3 rounded-lg hover:bg-blue-600 transition duration-300">Entrar</button>
+        </div>
+
+        <div class="w-1/2 flex flex-col items-center justify-center p-8">
+            <h1 class="text-4xl font-bold star-wars-font mb-4">Seja bem-vindo ao sistema da i9</h1>
+            <p class="text-lg text-center">Esse sistema tem suporte e disk help do T.I. Qualquer dúvida é só entrar em contato na opção "Suporte T.I" do menu.</p>
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
